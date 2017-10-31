@@ -1,0 +1,11 @@
+<form>
+    <input type="text" placeholder="name" [(ngModel)]="name" name="name">
+    <input type="text" placeholder="lastname" [(ngModel)]="lastname" name="lastname">
+    <input type="number" placeholder="age" [(ngModel)]="age" name="age">
+    <select name="typeid" [(ngModel)]="selectedTypeId">
+        <option value="" disabled>Choose your option</option>
+        <option *ngFor="let type of types" [ngValue]="types">{{type.name}}</option>
+    </select>
+    <input type="number" placeholder="id" name="id">
+    <input type="submit" value="REGISTRY" name="reg" (click)="compared('not in list')">
+</form>

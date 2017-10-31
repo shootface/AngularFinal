@@ -1,0 +1,14 @@
+<header>
+          <input type="checkbox" id="btn-menu">
+          <label id="btn" for="btn-menu"><img src="iconmenu.png" width="35px" height="30px"></label>
+          <img id="logo" src="logo.png" width="90px" height="46px">
+            <nav class="menu">
+                <ul>
+                    <li><img src="logo.png" width="100px" height="46px"></li>
+                    <li><a [routerLink]="['/lessons']">CURSOS</a></li>
+                    <li><a href="">TALLLERES</a></li>
+                    <li><a href="">ARTICULOS</a></li>
+                    <li><a [routerLink]="['/login']" >{{session}}</a></li>
+                </ul>
+            </nav>
+      </header>
