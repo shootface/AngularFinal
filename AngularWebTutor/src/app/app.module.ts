@@ -3,17 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModel } from '@angular/forms';
 import {NgForm} from '@angular/forms';
 import { FormsModule } from '@angular/forms';
-
+//Modulos
+import { loginModule } from './module/login.module';
 //Components 
 import { AppComponent }  from './app.component';
-import {HeaderComponent} from './common/header/header.component';
-import {FooterComponent} from './common/footer/footer.component';
-import {rightcomponent} from'./common/right.component';
-import {leftcomponent} from'./common/left.component';
-import {logincomponent} from './common/login/login.component';
-import {Registrycomponent} from './common/regystri/registry.component';
-import {HeaderComponentClose} from './common/headerClose/headerClose.component';
-import {lessonsComponent} from './module/lessons/lessons.component';
 //Routing
 import {routing, appRoutingProviders} from './app.routing';
 
@@ -21,21 +14,16 @@ import {routing, appRoutingProviders} from './app.routing';
   imports:      
   [ BrowserModule, 
     routing,
-    FormsModule
+    FormsModule,
+    loginModule
   ],
   declarations: 
-  [ AppComponent, 
-    HeaderComponent, 
-    FooterComponent, 
-    rightcomponent, 
-    leftcomponent, 
-    logincomponent, 
-    Registrycomponent, 
-    HeaderComponentClose,
-    lessonsComponent ],
+  [ AppComponent],
   bootstrap:    
   [ AppComponent ],
   providers:    
   [appRoutingProviders]
 })
-export class AppModule { }
+export class AppModule { 
+  
+}

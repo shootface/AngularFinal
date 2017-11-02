@@ -6,16 +6,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var leftcomponent = (function () {
-    function leftcomponent() {
+var mainModuleLogin = (function () {
+    function mainModuleLogin() {
     }
-    return leftcomponent;
+    return mainModuleLogin;
 }());
-leftcomponent = __decorate([
+mainModuleLogin = __decorate([
     core_1.Component({
-        selector: 'app-left-navigation',
-        template: "\n    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-4\">\n    leftcomponent\n    </div>"
+        selector: 'login-module-main',
+        template: "\n        <app-header></app-header>\n        <router-outlet></router-outlet>\n        <app-footer></app-footer>\n    "
     })
-], leftcomponent);
-exports.leftcomponent = leftcomponent;
-//# sourceMappingURL=left.component.js.map
+], mainModuleLogin);
+exports.mainModuleLogin = mainModuleLogin;
+//# sourceMappingURL=main.component.js.map

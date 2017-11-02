@@ -6,17 +6,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var lessonsComponent = (function () {
-    function lessonsComponent() {
-        this.title = 'clases para los viejos ';
+var HeaderComponentClose = (function () {
+    function HeaderComponentClose() {
     }
-    return lessonsComponent;
+    return HeaderComponentClose;
 }());
-lessonsComponent = __decorate([
+HeaderComponentClose = __decorate([
     core_1.Component({
-        selector: 'app-lessons',
-        templateUrl: './lessons.component.html'
+        selector: 'app-headerClose',
+        templateUrl: './headerClose.component.html'
     })
-], lessonsComponent);
-exports.lessonsComponent = lessonsComponent;
-//# sourceMappingURL=lessons.component.js.map
+], HeaderComponentClose);
+exports.HeaderComponentClose = HeaderComponentClose;
+//# sourceMappingURL=headerClose.component.js.map

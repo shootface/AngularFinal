@@ -6,6 +6,6 @@
         <option value="" disabled>Choose your option</option>
         <option *ngFor="let type of types" [ngValue]="types">{{type.name}}</option>
     </select>
-    <input type="number" placeholder="id" name="id">
+    <input type="number" placeholder="id" name="id" [(ngModel)]="id">
     <input type="submit" value="REGISTRY" name="reg" (click)="compared('not in list')">
 </form>

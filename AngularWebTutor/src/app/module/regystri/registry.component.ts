@@ -8,7 +8,7 @@ export class Registrycomponent{
     public lastname:string;
     public age:number;
     public typeID:string;
-    public id:string;
+    public id:number;
     public selectedTypeId:string;
 
     constructor(){
